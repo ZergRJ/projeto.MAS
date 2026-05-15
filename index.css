@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;          
+    justify-content: space-between;   
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    max-width: 260px;
+    object-fit: contain;
+    display: block;
+}
+
+.lista-horizontal {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+.navegacao {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+.navegacao .lista-horizontal {
+    justify-content: center;
+}
+
+.sobre,
+.orientacoes,
+.locais {
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid white;
+}
+
+.sobre {
+    align-items: center;
+    text-align: center;
+    background-image: url(imagens/Sobre.jpg);
+    color: white;
+}
+
+.sobre h1,
+.sobre p,
+.sobre ul {
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    padding: 24px;
+    border-radius: 22px;
+    max-width: 900px;
+    list-style: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.orientacoes {
+    align-items: center;
+    background-image: url(imagens/Orientacao2.jpg);
+    color: white;
+    position: relative;
+}
+
+.orientacoes-conteudo {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.orientacoes form {
+    width: 100%;
+    max-width: 460px;
+    min-height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+
+.orientacoes form h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    color: white;
+}
+
+.orientacoes select,
+.orientacoes input {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+}
+
+.orientacoes button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #f47f52;
+    color: white;
+    cursor: pointer;
+}
+
+.resposta-orientacao {
+    width: 100%;
+    max-width: 520px;
+    min-height: 500px;
+    margin-left: -20px;
+    padding: 80px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 22px;
+    color: white;
+}
+
+.resposta-orientacao h2 {
+    font-size: 46px;
+    color: #7fffd4;
+    margin-bottom: 25px;
+}
+
+.resposta-orientacao p {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.locais iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.locais {
+    align-items: center;
+    text-align: center;
+    background-image: url(imagens/Localizacao.jpg);
+    color: white;
+}
+
+.locais h2,
+.locais p {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    padding: 24px;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .orientacoes-conteudo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .orientacoes form,
+    .resposta-orientacao {
+        max-width: 100%;
+        min-height: auto;
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .orientacoes form h2,
+    .resposta-orientacao h2 {
+        font-size: 34px;
+    }
+
+    .resposta-orientacao p {
+        font-size: 18px;
+    }
+}

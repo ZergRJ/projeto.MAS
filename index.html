@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animal Son</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/MAS.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="imagens/logo-header.svg" alt="logo do My Animal Son" class="logo">
+        <ul class="lista-horizontal">
+            <li>Informar CEP</li>
+            <li>Compras recorrentes</li>
+            <li>Meus pedidos</li>
+            <li>Carrinho</li>
+            <li>Entrar / Cadastrar</li>
+        </ul>
+    </header>
+    <nav class="navegacao">
+        <ul class="lista-horizontal">
+            <li>Cachorro</li>
+            <li>Gatos</li>
+            <li>Outros Pets</li>
+            <li>Serviços</li>
+            <li>Plano de saúde</li>
+            <li>Mais</li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sobre" id="sobre">
+            <h1>Bem-vindo ao My Animal Son</h1>
+            <p>Bem-vindo ao My Animal Son, o seu espaço digital de orientação veterinária básica e facilitadora de cuidados com pets.
+            Criamos este site com o objetivo de democratizar o acesso a informações confiáveis e práticas sobre saúde animal. Sabemos que, muitas vezes, dúvidas simples sobre o bem-estar do seu cão, gato ou outro pet surgem fora do horário de atendimento clínico ou antes mesmo de uma consulta. Por isso, oferecemos conteúdo claro, direto e baseado em conhecimentos veterinários consolidados para ajudar tutores a tomarem as melhores decisões no dia a dia.
+            </p>
+            <ul>
+                <h2>O que você encontra aqui:</h2>
+                <li>Orientações básicas de saúde e bem-estar — sinais de alerta, primeiros socorros, vacinação, nutrição, higiene e prevenção de doenças comuns.</li>
+                <li>Facilidade no acesso a serviços — informações atualizadas sobre tipos de atendimentos veterinários, especialidades, emergências 24h, clínicas parceiras e como agendar consultas com mais agilidade.</li>
+                <li>Dicas práticas para tutores de primeira viagem ou para quem deseja cuidar melhor do seu companheiro de quatro (ou mais) patas.</li>
+            </ul>
+            <p>Não somos um substituto ao veterinário, mas sim uma ponte de conhecimento que ajuda você a chegar mais preparado e consciente na consulta, além de auxiliar na prevenção e no cuidado rotineiro.
+            Nosso compromisso é com a informação responsável, a saúde animal e o fortalecimento da relação entre tutores e profissionais veterinários. Acreditamos que pets mais saudáveis e tutores mais bem informados geram uma convivência mais feliz e longeva.
+            Seja bem-vindo! Cuide com amor, informe-se com qualidade.
+            </p>
+        </section>
+
+        <section class="orientacoes">
+            <div class="orientacoes-conteudo">
+            <form>
+                <h2>Orientações Veterinárias</h2>
+                <select name="animais">
+                    <option value="">Selecione um animal</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <select name="raça">
+                    <option value="">Selecione uma raça</option>
+                    <option value="pastor-alemão">Pastor Alemão</option>
+                    <option value="labrador">Labrador</option>
+                    <option value="siames">Siamês</option>
+                    <option value="vira-lata">Vira-Lata</option>
+                </select>
+                <input type="search" name="sintomas" placeholder="Digite os sintomas do seu pet">
+                <button type="submit">Procurar</button>
+            </form>
+
+            <div class="resposta-orientacao">
+                <h2>Resposta</h2>
+                <p>A orientação aparecera aqui depois da busca.</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="locais">
+            <h2>Locais de Atendimento Veterinário</h2>
+            <p>Encontre clínicas, hospitais e serviços veterinários próximos a você. Use nosso buscador para localizar profissionais qualificados e agendar consultas com facilidade.</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.949831064981!2d-43.4682592!3d-22.878311599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdfed5d38be57%3A0xd9e74e7c33a9e214!2sUniversidade%20Unisuam!5e0!3m2!1spt-BR!2sbr!4v1778852771147!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Animal Son.</p>
+    </footer>
+
+</body>
+</html>
