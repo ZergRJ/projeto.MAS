@@ -10,24 +10,21 @@
 <body>
     <header class="cabecalho">
         <img src="imagens/logo-header.svg" alt="logo do My Animal Son" class="logo">
-        <ul class="lista-horizontal">
-            <li>Informar CEP</li>
-            <li>Compras recorrentes</li>
-            <li>Meus pedidos</li>
-            <li>Carrinho</li>
-            <li>Entrar / Cadastrar</li>
-        </ul>
+        
+        <button class="botao-menu" id="botao-menu">
+            ☰
+        </button>
+        
+        <nav class="menu" id="menu">
+            <ul class="lista-horizontal">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#orientacoes">Orientações</a></li>
+                <li><a href="#locais">Locais</a></li>
+                <li><a href="#" class="cadastro-link">Entrar / Cadastrar</a></li>
+            </ul>
+        </nav>
+        
     </header>
-    <nav class="navegacao">
-        <ul class="lista-horizontal">
-            <li>Cachorro</li>
-            <li>Gatos</li>
-            <li>Outros Pets</li>
-            <li>Serviços</li>
-            <li>Plano de saúde</li>
-            <li>Mais</li>
-        </ul>
-    </nav>
 
     <main>
         <section class="sobre" id="sobre">
@@ -47,7 +44,7 @@
             </p>
         </section>
 
-        <section class="orientacoes">
+        <section class="orientacoes" id="orientacoes">
             <div class="orientacoes-conteudo">
             <form>
                 <h2>Orientações Veterinárias</h2>
@@ -75,7 +72,7 @@
             </div>
         </section>
 
-        <section class="locais">
+        <section class="locais" id="locais">
             <h2>Locais de Atendimento Veterinário</h2>
             <p>Encontre clínicas, hospitais e serviços veterinários próximos a você. Use nosso buscador para localizar profissionais qualificados e agendar consultas com facilidade.</p>
             
@@ -86,6 +83,6 @@
     <footer>
         <p>&copy; 2026 My Animal Son.</p>
     </footer>
-
+    <script src="aprendendo.js"></script>
 </body>
 </html>

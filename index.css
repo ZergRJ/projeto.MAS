@@ -11,7 +11,8 @@ body {
 
 main {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 80px;
 }
 
 html {
@@ -24,6 +25,11 @@ html {
     justify-content: space-between;   
     background-color: white;
     padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -41,21 +47,29 @@ html {
     padding: 15px 30px;
 }
 
-.navegacao {
-    background-color: purple;
-    color: white;
-    text-align: center;
+.lista-horizontal a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-.navegacao .lista-horizontal {
-    justify-content: center;
+.lista-horizontal a:hover {
+    color: #f47f52;
+}
+
+.botao-menu {
+    display: none;
+}
+
+.menu {
+    display: block;
 }
 
 .sobre,
 .orientacoes,
 .locais {
     min-height: 90vh;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +77,8 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 10px solid white;
+    border: 5px solid white;
+    scroll-margin-top: 80px;
 }
 
 .sobre {
@@ -232,4 +247,36 @@ footer {
     .resposta-orientacao p {
         font-size: 18px;
     }
+
+    .botao-menu {
+        display: block;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        background-color: white;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu.ativo {
+        display: block;
+    }
+
+    .lista-horizontal {
+        flex-direction: column;
+        gap: 0;
+        padding: 15px 30px;
+    }
+    
+    .lista-horizontal li {
+    padding: 10px 0;
 }
+}
+
