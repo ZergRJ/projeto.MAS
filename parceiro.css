@@ -191,6 +191,13 @@ a {
 
 }
 
+.sub {
+    text-align: center;
+    color: #807f7f;
+    font-size: 0.9375rem;
+    margin-bottom: 2.5rem
+}
+
 .caixaform{
     background: #fff;
     border: 1x solid #e8e2f0;
