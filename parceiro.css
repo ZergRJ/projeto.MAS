@@ -217,9 +217,28 @@ input{
     box-shadow: 2px 2px 5px rgba(0,0,0,0.04);
 }
 
+input:focus {
+    border-color: #9B59B6;
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.12);
+}
 input::placeholder {
     font-size: 0.8rem;
     color: #b0a8bc;
+}
+
+select {
+    color: #2b2b2b;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d0c8db;
+    border-radius: 10px;
+    font-size: 0.875rem;
+}
+
+select:focus {
+    border-color: #9B59B6;
 }
 
 .linhadupla{
