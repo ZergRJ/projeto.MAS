@@ -177,6 +177,33 @@ a {
     #9B59B6; 
     display: block; 
     text-align: center; }
+
+
+/* ── separações divas para a gnt se achar - form── */
+#cimaroxo {
+    padding: 8rem 1.5rem 4rem;
+    background: linear-gradient(135deg,#9B59B6 0%, #7d3f99 100%);
+    color: #fff;
+    text-align: center;
+}
+
+#cimaroxo h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5w, 3rem);
+}
+
+#cimaroxo p{
+    font-size: 1.0625rem;
+    opacity: 0.85;
+    max-width: 36rem;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+
 /* ── separações divas para a gnt se achar - form── */
 
 #secaoform {
