@@ -231,8 +231,9 @@ a {
 
 #secaoform {
     padding: 1rem 1.5rem 5rem;
-    background:#f9f7fc;
+    background: #f9f7fc
 }
+
 #secaoform h2 {
     font-family: 'Fraunces', serif;
     font-size: clamp(1.5rem, 2w, 1.875rem);
