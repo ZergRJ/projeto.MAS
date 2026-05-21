@@ -178,6 +178,57 @@ a {
     display: block; 
     text-align: center; }
 
+   /* ── separações divas para a gnt se achar - roxo── */
+#cimaroxo {
+    padding: 8rem 1.5rem 4rem;
+    background: linear-gradient(135deg,#9B59B6 0%, #7d3f99 100%);
+    color: #fff;
+    text-align: center;
+}
+
+
+   /* ── separações divas para a gnt se achar - missao── */
+
+#missao {
+    padding: 5rem 1.5rem;
+}
+.missao-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.missao-texto h2 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(1.5rem, 2w, 1.875rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.missao-texto p{
+    font-size: 0.9375rem;
+    color: #807f7f;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+   /* ── separações divas para a gnt se achar - valores── */
+
+#valores {
+    padding: 5rem 1.5rem;
+    background: #f9f7fc
+}
+
+#valores h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    align-items: center;
+    margin-bottom: 3rem;
+    font-size: clamp(1.75rem, 3w 2.25rem);
+}
+
+
 
       /* ── separações divas para a gnt se achar - o rodape── */
 
