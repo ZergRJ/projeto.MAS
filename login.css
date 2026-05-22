@@ -8,6 +8,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -16,13 +22,14 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     
 }
-logo{
-    padding: 15px;
-    margin-bottom: 3px;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 h2{
-    font-size: 16px;
+    font-size: 1rem;  
     display: inline-block;
     color: #2b2b2b;
     vertical-align: top;
@@ -40,29 +47,31 @@ img {
 
 h1 {
     font-size: 20px;
-    margin-bottom: 3px;
-    color: #2b2b2b;
-    margin-top: 0;
     font-family: "DM Serif Display", serif;
     font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #2b2b2b;
+    margin-top: 0;
 }
 
 p {
    color: #807f7f;
    margin-top: 0;
    font-size: 12px;
+   margin-bottom: 0.25rem;
 }
 
 form {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    gap: 0.875rem;
 }
 
 label{
-    margin-bottom: 1rem;
+    margin-bottom: 0.375rem;
     color: #2b2b2b;
-    font-size: 12px;
+    font-size: 0.8125rem;
     font-weight: bold;
 }
 
@@ -71,7 +80,7 @@ button {
     padding: 0.5rem;
     font-size: 0.8rem;
     background-color: #985986;
-    color: white;
+    color: #fff;
     font-weight: bold;
     border-radius: 10px;
     border: none;
@@ -81,7 +90,7 @@ button {
 }
 
 button:hover {
-    background-color: #9B59B6;
+    background-color: #af659a;
 }
 
 .link {
