@@ -282,7 +282,7 @@ input{
 
 input:focus {
     border-color: #985986;
-    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.12);
+    
 }
 input::placeholder {
     font-size: 0.8rem;
