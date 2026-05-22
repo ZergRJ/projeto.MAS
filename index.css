@@ -598,30 +598,13 @@ a {
 }
 
     /* ──------------------------------------ separações divas para a gnt se achar - responsividade -----------------------------------------------── */
+    /* ── separações divas para a gnt se achar - responsividade ── */
 @media (max-width: 768px) {
-    .orientacoes-conteudo {
-        flex-direction: column;
-        gap: 20px;
+    #navmenu, .btnentradas {
+        display: none;
+        position: fixed;
     }
-
-    .orientacoes form,
-    .resposta-orientacao {
-        max-width: 100%;
-        min-height: auto;
-        margin-left: 0;
-        padding: 30px;
-    }
-
-    .orientacoes form h2,
-    .resposta-orientacao h2 {
-        font-size: 34px;
-    }
-
-    .resposta-orientacao p {
-        font-size: 18px;
-    }
-
-    .botao-menu {
+    #btnmenu {
         display: block;
         font-size: 28px;
         background: none;
@@ -629,26 +612,23 @@ a {
         cursor: pointer;
     }
 
-    .menu {
-        display: none;
-        background-color: white;
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-    }
-
     .menu.ativo {
         display: block;
     }
-
-    .lista-horizontal {
-        flex-direction: column;
-        gap: 0;
-        padding: 15px 30px;
-    }
-    
-    .lista-horizontal li {
-    padding: 10px 0;
 }
+
+@media (max-width: 600px) {
+    .rodape-grid {
+        grid-template-columns: 1fr;
+    }
+    .rodape-direito {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1020px) {
+    .rodape-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
