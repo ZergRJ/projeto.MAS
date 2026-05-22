@@ -321,14 +321,92 @@ a {
     background: #3b82f6; 
 }
 
-    /* ──--------------------- separações divas para a gnt se achar - funcionalidade e tals-------------------------------------── */
+/* ──--------------------- separações divas para a gnt se achar - funcionalidade e tals-------------------------------------── */
 
+#funcionalidades {
+    padding: 5rem 1.5rem;
+}
 
+#funcionalidades h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
 
+.secaodesub {
+    text-align: center;
+    color: #807f7f;
+    max-width: 28rem;
+    margin: 0 auto 3rem;
+    font-size: 0.9375rem;
+}
 
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
 
+.card-funcio {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e8e2f0;
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
 
+.card-funcio:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
 
+.card-icone {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.verde-bg   { 
+    background: #d1fae5; 
+}
+.amarelo-bg { 
+    background: #fef3c7; 
+}
+.laranja-bg { 
+    background: #fff7ed; 
+}
+
+.card-funcio h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #2b2b2b;
+}
+
+.card-funcio p {
+    font-size: 0.875rem;
+    color: #807f7f;
+    line-height: 1.65;
+    flex: 1;
+    margin: 0 0 1rem;
+}
+
+.card-link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #eb7831;
+    margin-top: auto;
+}
 
 
     /* ──------------------------------------ separações divas para a gnt se achar - o rodape-------------------------------------------------------── */
