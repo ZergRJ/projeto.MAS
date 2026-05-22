@@ -318,7 +318,7 @@ textarea {
 }
 
 textarea:focus {
-    border-color: #9b986;
+    border-color: #985986;
     box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.12);
 }
 
