@@ -408,6 +408,101 @@ a {
     margin-top: auto;
 }
 
+ /* ──-------------------------------- separações divas para a gnt se achar - carteira digital la--------------------------------── */
+
+#carteira {
+    padding: 5rem 1.5rem;
+    background: linear-gradient(135deg, #985986 20%, #af659a 100%);
+    color: #fff;
+}
+
+.carteira-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.carteira-texto h2 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2b2b2b;
+}
+
+.carteira-texto p {
+    opacity: 0.8;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    font-size: 0.9375rem;
+    color: #fff;
+}
+
+.carteira-texto ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-bottom: 2rem;
+}
+
+.carteira-texto li {
+    font-size: 0.9375rem;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.carteira-texto li::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 0.115rem;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 0.625rem;
+    flex-shrink: 0;
+}
+
+.btn-cadastro {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #eb7831;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: box-shadow 0.2s, background 0.15s;
+}
+
+.btn-cadastro:hover { 
+    background: #d3692c; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.carteira-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.carteira-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
 
     /* ──------------------------------------ separações divas para a gnt se achar - o rodape-------------------------------------------------------── */
 
