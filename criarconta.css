@@ -8,6 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -17,7 +22,7 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     
 }
-logo{
+.logo{
     padding: 15px;
     margin-bottom: 3px;
 }
@@ -73,7 +78,7 @@ button {
     font-size: 0.8rem;
     font-weight: bold;
     background-color: #985986;
-    color: white;
+    color: #fff;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -82,7 +87,7 @@ button {
 }
 
 button:hover {
-    background-color: #9B59B6;
+    background-color: #af659a;
 }
 
 .linkentrar {
@@ -106,14 +111,15 @@ input {
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: 1.1rem;
+    font-size: 0.875rem;
     border-radius: 10px;
     outline: none;
 }
 
-::placeholder {
-    font-size: 11px;
+input::placeholder {
+    font-size: 0.8rem;
     margin-right: 1rem;
+    color: #b0a8bc;
 }
 
 
