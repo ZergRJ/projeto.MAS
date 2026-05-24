@@ -180,25 +180,21 @@ a {
 /* ──-------------------------------- separações divas para a gnt se achar - parte de cima --------------------------── */
 
 
-#conteudo{
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-}
 .cabecalho{
-    padding: 6rem 0.125rem 1rem 0.125rem;
+    padding: 6rem 0.125rem 1.7rem;
+    padding-left: 1.780rem;
+
     
 }
 .cabecalho h1 {
     font-family: "DM Serif Display", serif;
     font-size: clamp(1.75rem, 3vw, 2.25rem);
     font-weight: 700;  
-    margin: 0;
 }
 .cabecalho p{
     margin-top: 0.5rem;
     color: #807f7f;
     font-size: 0.937rem;
-    margin: 0;
     
 }
     /* ──---------------- separações divas para a gnt se achar - filtrooo e busca --------------------------------── */
