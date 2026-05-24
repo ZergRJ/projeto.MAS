@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Animal Son</title>
+    <title>Guias</title>
     <link rel="stylesheet" href="guias.css">
     <link rel="icon" type="image" href="logotipo.png">
 </head>
@@ -44,7 +44,75 @@
         </div>
     </nav>
 
-    <!--separações divas para a gnt se achar - o rodape-->
+<!-------------------separações divas para a gnt se achar - parte de cima---------------------->
+    <main class="conteudo">
+        <div class="container">
+            <div class="cabecalho">
+                <h1>Guia de Cuidado Animal</h1>
+                <p>Primeiros socorros e cuidados essenciais para o seu pet</p>
+            </div>
+        </div>
+
+
+
+<!-------------------separações divas para a gnt se achar - filtros---------------------->
+            <div id="filtros">
+                <div class="busca">
+                    <span class="iconebusca">&#128269;</span>
+                    <input type="text" id="busca" placeholder="Buscar guias..." oninput="filtrar()">
+                </div>
+                <div id="botoes-categoria">
+                    <button class="btn-cat ativo" data-cat="todos" onclick="trocarCategoria(this)">Todos</button>
+                    <button class="btn-cat ativo" data-cat="primeiros-socorros" onclick="trocarCategoria(this)">Primeiros Socorros</button>
+                    <button class="btn-cat ativo" data-cat="cuidados-animais" onclick="trocarCategoria(this)">Cuidados Animais</button>
+
+                </div>
+                <select id="especie" onchange="filtrar()">
+                    <option value="">Todas as espécies</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="coelho">Coelho</option>
+                </select>
+            </div>
+
+
+   <!-------------------separações divas para a gnt se achar - grid de guias--------------------->
+            <div id="gridguias">
+                <a  href="../guias/exemplo.html" class="card-guia" data-cat="primeiros-socorros" data-esp="cachorro gato">
+                    <div class="card-topo">
+                        <span class="tag tag-socorro">Primeiros Socorros</span>
+                        <span class="tempo">... 5min</span>
+                    </div>
+                    <h3>Como agir</h3>
+                    <p>tecnicas xxx xxx xxx xxxx xxx xxx xxx xxxxx</p>
+                    <span class="link-guia">Ler guia &rsaquo;</span>
+                </a>
+
+
+                <a  href="#" class="card-guia" data-cat="cuidados-animais" data-esp="cachorro gato">
+                    <div class="card-topo">
+                        <span class="tag tag-cuidado">Cuidados Animais</span>
+                        <span class="tempo">... 5min</span>
+                    </div>
+                    <h3>Como agir</h3>
+                    <p>tecnicas xxx xxx xxx xxxx xxx xxx xxx xxxxx</p>
+                    <span class="link-guia">Ler guia &rsaquo;</span>
+                </a>
+                                
+            </div>         
+    </main>
+
+
+
+
+
+
+
+
+
+<!------------------------separações divas para a gnt se achar - o rodape--------------------------------------------------------->
+
 
      <footer id="rodape">
         <div class="container">
