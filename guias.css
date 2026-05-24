@@ -191,13 +191,14 @@ a {
 .cabecalho h1 {
     font-family: "DM Serif Display", serif;
     font-size: clamp(1.75rem, 3vw, 2.25rem);
-    font-weight: 700;
-    padding-left: 0.01rem;   
+    font-weight: 700;  
+    margin: 0;
 }
 .cabecalho p{
     margin-top: 0.5rem;
     color: #807f7f;
     font-size: 0.937rem;
+    margin: 0;
     
 }
     /* ──---------------- separações divas para a gnt se achar - filtrooo e busca --------------------------------── */
