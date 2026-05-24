@@ -534,6 +534,7 @@ a {
     color: #2b2b2b;
     font-family: "DM Serif Display", serif;
     font-weight: 700;
+    align-items: center;
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 1rem;
 }
