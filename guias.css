@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,12 @@ html {
     scroll-behavior: smooth;
 }
 
-    /* ──---------------------- separações divas para a gnt se achar ----------------------------------- nav ── */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+    /* ──--------------------------------- separações divas para a gnt se achar - nav -------------------------------------------------── */
 
 #navbar {
     display: flex;        
@@ -146,7 +150,8 @@ a {
     background: #fff;
 }
 
-#menuMobile a, #menuMobile button {
+#menuMobile a,
+#menuMobile button {
     display: block;
     padding: 0.625rem 0.75rem;
     border-radius: 8px;
@@ -162,23 +167,235 @@ a {
 }
 
 #menuMobile a:hover { 
-    background: #f3eef9; 
-    color: #2b2b2b; 
+    background: #f3eef9; color: #2b2b2b; 
 }
 #menuMobile hr { 
-    border: none; 
-    border-top: 1px solid #e8e2f0; 
-    margin: 0.25rem 0; 
+    border: none; border-top: 1px solid #e8e2f0; margin: 0.25rem 0; 
 }
 #menuMobile .btn-nav { 
-    color: #fff; 
-    background: #9B59B6; 
-    display: block; 
-    text-align: center; 
+    color: #fff; background: #9B59B6; display: block; text-align: center; 
 }
 
 
-      /* ── separações divas para a gnt se achar - o rodape── */
+/* ──-------------------------------- separações divas para a gnt se achar - parte de cima --------------------------── */
+
+
+#conteudo{
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+.cabecalho{
+    padding: 6rem 0.125rem 1rem 0.125rem;
+    
+}
+.cabecalho h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 700;
+    padding-left: 0.01rem;   
+}
+.cabecalho p{
+    margin-top: 0.5rem;
+    color: #807f7f;
+    font-size: 0.937rem;
+    
+}
+    /* ──---------------- separações divas para a gnt se achar - filtrooo e busca --------------------------------── */
+
+#filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.125rem 1.7rem;
+}
+
+.busca {
+    position: relative;
+    flex: 1;
+    min-width: 12rem;
+    max-width: 18rem;
+
+}
+.iconebusca{
+    position: absolute;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.675rem;
+}
+
+#busca {
+    width: 100%;
+    padding: 0.375rem 0.875rem;
+    border: 1px solid #d0c8db;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    outline: none;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.15s;
+    padding-left: 1.295rem;
+}
+
+#busca:focus{
+    border-color: #985986;
+}
+
+#busca::placeholder {
+    color: #d0c8db;
+    font-size: 0.8rem;
+    margin-right:0.5rem;
+}
+
+
+/* ──------------------------------------ separações divas para a gnt se achar - os botão ---------------------------------── */
+
+
+
+#botoes-categoria {
+    display: flex;
+    gap: 0.375rem;
+    flex-wrap: wrap;
+}
+
+.btn-cat {
+    padding: 0.375rem 0.875rem;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #d0c8db;
+    background: transparent;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #2b2b2b;
+    transition: all 0.15s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-cat:hover {
+    background: #985986;
+    border-color: #985986;
+    color: #fff;
+
+}
+
+#especie{
+    padding: 0.375rem 0.875rem;
+    border: 1px solid #d0c8db;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#especie:hover{
+    background: #985986;
+    border-color: #985986;
+    color: #fff;
+    
+}
+
+#especie option{
+    font-weight: 600;
+}
+
+
+/* ──--------------------- separações divas para a gnt se achar - grid dos cards ---------------------------------------------── */
+
+
+#gridguias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0.125rem 1.7rem;
+}
+
+
+/* ──----------------------------------- separações divas para a gnt se achar - cards ------------------------------── */
+
+
+.card-guia {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #e8e2f0;
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card-guia:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.card-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.tag{
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.625rem;
+    border-radius: 999px;
+    border: 1px solid;
+}
+
+.tag-socorro {
+    background: #fff1f2;
+    color: #be123c;
+    border-color: #fecdd3;
+}
+
+.tag-cuidado {
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-color: #bfdbfe;
+}
+
+.tempo{
+    font-size: 0.75rem;
+    color: #807f7f;
+}
+
+.card-guia h3{
+    margin-bottom: 0.5rem;
+    line-height: 1.35rem;
+    flex: 1;
+    font-weight: 700;
+    font-size: 0.937rem;
+    font-family: "DM Serif Display", serif;
+    color: #2b2b2b;
+}
+
+.card-guia p{
+    font-size: 0.8125rem;
+    color: #807f7f;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+}
+
+.link-guia {
+    color: #985986;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+
+
+/* ──---------------------------------- separações divas para a gnt se achar - o rodape ----------------------------------------── */
+
 
 #rodape {
     background: #2b2b2b;
@@ -275,4 +492,57 @@ a {
     opacity: 0.35;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+ /* ── separações divas para a gnt se achar - responsividade ── */
+@media (max-width: 1024px) {
+    .cards-grid      { 
+        grid-template-columns: 1, 1fr; 
+    }
+    .rodape-grid     { 
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    #navmenu, .btnentradas { 
+        display: none; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: #ffffff;
+    }
+    #btnmenu { 
+        display: block; 
+    }
+
+    #navmenu.ativo{
+        display: block;
+    }
+
+    .btnentradas {
+        flex-direction: column;
+        padding: 0.125rem 0.75rem;
+    }
+
+    #navmenu a, #navmenu a:hover, #navmenu{
+        flex-direction: column;
+        padding: 0.095rem 0.75rem;
+        gap: 0.175rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .cards-grid       { 
+        grid-template-columns: 1fr; 
+    }
+    .rodape-grid      { 
+        grid-template-columns: 1fr; 
+    }
+    .rodape-direito    { 
+        flex-direction: column; text-align: center; 
+    }
 }
