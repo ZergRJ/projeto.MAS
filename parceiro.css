@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
@@ -18,7 +17,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 0.125rem;
 }
 
 html {
@@ -254,7 +253,7 @@ a {
 /* ── separações divas para a gnt se achar - form── */
 
 #secaoform {
-    padding: 1rem 1.5rem 5rem;
+    padding: 0.5rem 2rem;
     background: #f9f7fc
 }
 
@@ -264,6 +263,7 @@ a {
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.5rem;
+    margin-top: 2.5rem;
 
 }
 
@@ -375,7 +375,10 @@ textarea::placeholder{
 
 #btnenviar:hover {
     background-color: #af659a;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
+
 
 
       /* ──----------------- separações divas para a gnt se achar - o rodape------------------------------── */
