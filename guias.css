@@ -489,10 +489,10 @@ a {
 
  /* ── separações divas para a gnt se achar - responsividade ── */
 @media (max-width: 1024px) {
-    .cards-grid      { 
+    .card-guia { 
         grid-template-columns: repeat(1, 1fr); 
     }
-    .rodape-grid     { 
+    .rodape-grid{ 
         grid-template-columns: 1fr 1fr; 
     }
 }
@@ -529,13 +529,13 @@ a {
 }
 
 @media (max-width: 600px) {
-    .cards-grid       { 
+    .card-guia{ 
         grid-template-columns: 1fr; 
     }
-    .rodape-grid      { 
+    .rodape-grid{ 
         grid-template-columns: 1fr; 
     }
-    .rodape-direito    { 
+    .rodape-direito{ 
         flex-direction: column; text-align: center; 
     }
 }
