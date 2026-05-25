@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
@@ -18,7 +19,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 0.125rem;
 }
 
 html {
@@ -176,14 +177,12 @@ a {
     color: #fff; background: #9B59B6; display: block; text-align: center; 
 }
 
-
-/* ──-------------------------------- separações divas para a gnt se achar - parte de cima --------------------------── */
+      /* ── separações divas para a gnt se achar - parte de cima ----------------── */
 
 
 .cabecalho{
     padding: 6rem 0.125rem 1.7rem;
     padding-left: 1.780rem;
-    flex: 1;
 
     
 }
@@ -198,7 +197,7 @@ a {
     font-size: 0.937rem;
     
 }
-    /* ──---------------- separações divas para a gnt se achar - filtrooo e busca --------------------------------── */
+    /* ──---------------- separações divas para a gnt se achar - filtrooo ----------------── */
 
 #filtros {
     display: flex;
@@ -249,7 +248,7 @@ a {
 }
 
 
-/* ──------------------------------------ separações divas para a gnt se achar - os botão ---------------------------------── */
+/* ── separações divas para a gnt se achar - parte de cima ----------------── */
 
 
 
@@ -305,7 +304,7 @@ a {
 }
 
 
-/* ──--------------------- separações divas para a gnt se achar - grid dos cards ---------------------------------------------── */
+  /* ── separações divas para a gnt se achar - parte de cima ----------------── */
 
 
 #gridguias{
@@ -315,8 +314,7 @@ a {
     padding: 0.125rem 1.7rem;
 }
 
-
-/* ──----------------------------------- separações divas para a gnt se achar - cards ------------------------------── */
+   /* ── separações divas para a gnt se achar - parte de cima ----------------── */
 
 
 .card-guia {
@@ -392,8 +390,7 @@ a {
 
 
 
-/* ──---------------------------------- separações divas para a gnt se achar - o rodape ----------------------------------------── */
-
+      /* ── separações divas para a gnt se achar - o rodape── */
 
 #rodape {
     background: #2b2b2b;
