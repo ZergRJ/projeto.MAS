@@ -625,10 +625,18 @@ a {
         flex-direction: column;
         text-align: center;
     }
+
+    .cards-guia {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
     .rodape-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .cards-guia{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
