@@ -598,7 +598,7 @@ a {
 }
 
     /* ──------------------------------------ separações divas para a gnt se achar - responsividade -----------------------------------------------── */
-    /* ── separações divas para a gnt se achar - responsividade ── */
+   
 @media (max-width: 768px) {
     #navmenu, .btnentradas {
         display: none;

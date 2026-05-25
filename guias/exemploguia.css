@@ -431,7 +431,11 @@ a {
     .rodape-grid     { 
         grid-template-columns: 1fr 1fr; 
     }
+    .card{
+        grid-template-columns: repeat(1fr, 1fr);
+    }
 }
+
 
 @media (max-width: 768px) {
     #navmenu, .btnentradas { 
@@ -471,4 +475,9 @@ a {
     .rodape-direito    { 
         flex-direction: column; text-align: center; 
     }
+    .card{
+        grid-template-columns: 1fr;
+    }
 }
+
+
