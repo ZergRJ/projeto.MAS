@@ -23,6 +23,21 @@ body {
     
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0.125rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
     /* ──--------------------------------- separações divas para a gnt se achar - nav -------------------------------------------------── */
 
 #navbar {
