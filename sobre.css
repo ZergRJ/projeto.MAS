@@ -25,6 +25,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
     /* ──--------------------------------- separações divas para a gnt se achar - nav -------------------------------------------------── */
 
 #navbar {
@@ -174,7 +179,7 @@ a {
   /* ──-------------- separações divas para a gnt se achar - parte cima roxo-----------── */
 
 #cimaroxo {
-    padding: 8rem 1.5rem 4rem;
+    padding: 8rem 0.125rem 4rem;
     background: linear-gradient(135deg, #985986 20%, #af659a 100%);
     color: #fff;
 }
